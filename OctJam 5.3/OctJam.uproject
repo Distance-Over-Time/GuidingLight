@@ -13,6 +13,13 @@
 			]
 		}
 	],
+	"Plugins": [
+		{
+			"Name": "GoogleTextToSpeech",
+			"Enabled": false,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/6d6bb40bd5a6452f9473b8b13bdf3fd3"
+		}
+	],
 	"TargetPlatforms": [
 		"Windows",
 		"HoloLens"
