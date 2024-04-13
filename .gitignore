@@ -80,3 +80,6 @@ OctJam 5.3/Intermediate/*
 DerivedDataCache/*
 OctJam/Intermediate/*
 OctJam 5.3/Intermediate/*
+
+# Avoiding API issues
+OctJam 5.3/Config/DefaultGame.ini
