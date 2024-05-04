@@ -25,7 +25,7 @@ protected:
 private:
 	void Patrol();
 	void ContinuePatrol();
-	void RestartLevel();
+	// void RestartLevel();
 
 	UFUNCTION()
 	void OnOverlapWithPlayer(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);

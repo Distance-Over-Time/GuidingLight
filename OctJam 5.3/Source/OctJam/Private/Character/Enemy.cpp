@@ -97,10 +97,10 @@ void AEnemy::ContinuePatrol()
   Patrol();
 }
 
-void AEnemy::RestartLevel()
-{
-  UGameplayStatics::OpenLevel(this, FName(*GetWorld()->GetName()), false);
-}
+// void AEnemy::RestartLevel()
+// {
+//   UGameplayStatics::OpenLevel(this, FName(*GetWorld()->GetName()), false);
+// }
 
 void AEnemy::OnOverlapWithPlayer(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
@@ -110,7 +110,7 @@ void AEnemy::OnOverlapWithPlayer(UPrimitiveComponent* OverlappedComponent, AActo
     // Check if the overlapping component is the CapsuleComponent of the MainCharacter
     if (OtherComp == MainCharacter->GetCapsuleComponent())
     {
-      RestartLevel();
+      MainCharacter->Destroy();
     }
   }
 }
